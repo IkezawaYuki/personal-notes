@@ -1,14 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Notes from '@/components/Notes'
-import Login from '@/components/Login'
-import Edit from '@/components/Edit'
-import Add from '@/components/Add'
-import Show from '@/components/Show'
+import Notes from '@/components/profile/Notes'
+import Show from '@/components/profile/Show'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -16,23 +14,8 @@ export default new Router({
       component: Notes
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
-    {
-      path: '/edit',
-      name: 'Edit',
-      component: Edit
-    },
-    {
-      path: '/add',
-      name: 'Add',
-      component: Add
-    },
-    {
       path: '/show',
-      name: 'Show',
+      name: "Show",
       component: Show
     }
   ]

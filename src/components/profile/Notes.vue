@@ -1,21 +1,46 @@
 <template>
-  <div>Hello world</div>
+  <div class="index container">
+              
+    <div class="card" v-for="person in people" :key="person.id">
+      <div class="card-content">
+        <h2 class="indigo-text">{{ person.name }}</h2>
+        <p class="indigo-text">{{ person.name_kana }}</p>
+        <p class="indigo-text">{{ person.mail }}</p>
+        <p class="indigo-text">{{ person.sex }}</p>
+      </div>
+      <span class="btn-floating btn-large halfway-fab pink">
+        <router-link :to="{name:'Edit'}">
+          <i class="material-icons edit">edit</i>
+        </router-link>
+      </span>
+    </div>
+  </div>
 </template>
 
 
 <script>
+import db from '@/firebase/init'
 export default {
   name: 'Notes',
   data() {
     return {
-
+      people: []
     }
   },
   methods:{
 
   },
   created(){
-
+    db.collection("person").get().then(snapshot => {
+      snapshot.forEach(doc => {
+        let person = doc.data()
+        person.id = doc.id
+        console.log(person)
+        this.people.push(person)
+      })
+    }).catch(err => {
+      console.log(err)
+    })
   }
 }
 </script>

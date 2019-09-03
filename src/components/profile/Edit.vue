@@ -1,19 +1,18 @@
 <template>
-  <div class="cotainer">
-    <div id="contents">
-
-    </div>
-  </div>
+  
 </template>
 
 
 <script>
 export default {
-  name: "Add",
+  name: "Edit",
   data(){
     return{
 
     }
+  },
+  methods:{
+
   }
 }
 </script>

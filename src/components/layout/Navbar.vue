@@ -8,7 +8,9 @@
           <li v-if="!user"><router-link :to="{ name: 'Login' }">ログイン</router-link></li>
           <li v-if="user"><a>{{ user.email }}</a></li>
           <li v-if="user"><a @click="logout">ログアウト</a></li>
+
         </ul>
+       
       </div>
     </nav>
   </div>

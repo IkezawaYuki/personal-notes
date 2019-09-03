@@ -4,6 +4,8 @@ import Notes from '@/components/profile/Notes'
 import Show from '@/components/profile/Show'
 import Login from '@/components/auth/Login'
 import Signup from '@/components/auth/Signup'
+import Edit from '@/components/profile/Edit'
+import Add from '@/components/profile/Add'
 
 Vue.use(Router)
 
@@ -29,6 +31,16 @@ export default new Router({
       path: '/signup',
       name: 'Signup',
       component: Signup
+    },
+    {
+      path: '/edit',
+      name: 'Edit',
+      component: Edit
+    },
+    {
+      path: '/add',
+      name: 'Add',
+      component: Add
     }
   ]
 })

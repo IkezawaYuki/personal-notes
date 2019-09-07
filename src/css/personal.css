@@ -2345,9 +2345,6 @@ select {
 .member-inputForm .pt01 .dl04 .li02 input:checked+span {
   background: #f286b3;
 }
-.member-inputForm .pt01 .dl04 li input+span {
-  text-indent: -20px;
-}
 
 .radioDesign02 label input:checked+span {
   color: #fff;

@@ -54,7 +54,7 @@
                   <li class="li01">
                     <dl class="dl06 js-skMailAdress" name="email1parent"><dt>メール<em>アドレス</em></dt>
                       <dd>
-                        <span><input type="text" name="email" value=""prior="7" data-role="error-display" valid_length="10,11" valid_minus="-" valid_m_length="10,13" alt="電話番号" placeholder="example@com" parent="tel1parent" errmsg="tel1_errmsg"></span> <span class="message" name="tel1_errmsg">
+                        <span><input type="text" name="email" value="" prior="7" data-role="error-display" valid_length="10,11" valid_minus="-" valid_m_length="10,13" alt="電話番号" placeholder="example@com" parent="tel1parent" errmsg="tel1_errmsg"></span> <span class="message" name="tel1_errmsg">
                           </span> 
                       </dd>
                     </dl>
@@ -85,6 +85,125 @@
             </div>
           </div>
         </div>
+
+    <div class="member-titleInfo">
+      <div class="pattern-1">
+        <div class="bg01">
+          <div class="pt01">
+            <h2>その他情報</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="member-inputForm">
+      <div class="pattern-1">
+        <div class="bg01">
+          <div class="pt02">
+            <ul class="js-careerBlock">
+              <li class="li01" id="pr_text" name="pr_textparent">
+                <dl> <dt>自己PR</dt>
+                  <dd class="js-textCount"> <textarea name="pr_text" class="js-tc-input" prior="10" data-role="error-display" data-max-length="1000" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="自己PR" placeholder="例：職場の方々からは気が利くということを評価していただいており、私自身もそこが自分の強みだと自負しております。私は、仕事を進める上で、1つ1つのことを丁寧にこなすことを大切にしており、今後も続けていきたいと思います。" parent="pr_textparent" errmsg="pr_text_errmsg"></textarea>
+                    <p></p> <span class="message js-tc-error" name="pr_text_errmsg"></span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="li02" id="job_careers" name="work_flgparent">
+                <dl> <dt>職務経験</dt>
+                  <dd>
+                    <dl> <dt>職務経験の有無</dt>
+                      <dd>
+                        <ul>
+                          <li><label><input type="radio" name="work_flg" value="0" prior="6" class="js-cb-checkBtn" data-role="error-display"  parent="sexparent" errmsg="sex_errmsg"><span>あり</span></label></li>
+                          <li><label><input type="radio" name="work_flg" value="1" prior="6" class="js-cb-checkBtn" data-role="error-display"  parent="sexparent" errmsg="sex_errmsg"><span>なし</span></label></li>
+                       </ul>
+                        <p class="p01">※「あり」を選択された場合、直近のものから順に職務経験を入力してください。</p> <span class="message" name="work_flg_errmsg"></span>
+                      </dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </li>
+
+
+      <!-- <li class="li03 js-cb-moduleItem js-cb-hide"> -->
+      <li class="li03 js-cb-moduleItem">
+				<dl id="js-career-form-1">
+					<dt class="js-cb-blockLabel">経験1</dt>
+					<dd>
+						<dl class="dl01" name="syu_comp_nameparent1">
+							<dt>勤務先企業名</dt>
+							<dd>
+								<span>
+									<input type="text" name="syu_comp_name1" value="" class="" prior="101" data-role="error-display" num="1" data-max-length="50" valid_length="100" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="勤務先企業名" placeholder="例：ディップ株式会社" parent="syu_comp_nameparent1" errmsg="syu_comp_name_errmsg1">
+								</span>
+								<span class="message" name="syu_comp_name_errmsg1">
+									
+								</span>
+							</dd>
+						</dl>
+						<dl class="dl02 js-workPeriod" name="entry_periodparent1">
+							<dt>経験期間</dt>
+							<dd>
+								
+							</dd>
+						</dl>
+						<dl class="dl03" name="koyo_sts_kbnparent1">
+							<dt>就業形態</dt>
+							<dd>
+								
+							</dd>
+						</dl>
+						<dl class="dl04" name="keiken_shok_cdparent1">
+							<dt>職種</dt>
+							<dd>
+								
+							</dd>
+						</dl>
+						<dl class="dl06" name="syom_naiyoparent1">
+							<dt>職務内容</dt>
+							<dd class="js-textCount">
+								<textarea name="syom_naiyo1" class="js-tc-input" prior="501" data-role="error-display" data-max-length="1000" num="1" valid_length="1000" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="職務内容" parent="syom_naiyoparent1" errmsg="syom_naiyo_errmsg1"></textarea>
+								<p><span>入力文字<em class="js-tc-currentLength">0</em>文字/</span>最大<em class="js-tc-maxLength">1,000</em>文字</p>
+								<span class="message js-tc-error" name="syom_naiyo_errmsg1"></span>
+							</dd>
+						</dl>
+						<dl class="dl05 js-cb-btnItem">
+							<dt class="js-cb-btnItemLabel">職務経験の<br>追加</dt>
+								<dd>
+									<ul class="ul03">
+										<li class="li01"><a class="color03 js-cb-removeBtn js-cb-hide">職務経験を削除する</a></li>
+										<li class="li02"><a id="js-cb-addBtn1" class="color03 js-cb-addBtn">さらに職務経験を追加する</a></li>
+									</ul>
+								</dd>
+						</dl>
+					</dd>
+				</dl>
+			</li>
+
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="common-actionButton">
+    <div class="pattern-1">
+      <div class="bg01">
+        <div class="pt01">
+          <ul>
+            <li><input id="updateButton" type="button" value="追加する" class="color01"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
       </div>
     </form>

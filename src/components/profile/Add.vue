@@ -68,7 +68,11 @@
                     <ul>
                       <li></li>
                       <li class="li02">
-                        <p></p> <textarea name="address" class="js-tc-input" prior="23" data-role="error-display" data-max-length="100" valid_length="100" valid_rule_rt="checkStrCount" alt="住所：その他" placeholder="町名・番地・アパートマンション名" parent="addressparent" errmsg="address_errmsg"></textarea>
+                        <p></p>
+                          <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"  placeholder="町名・番地・アパートマンション名"></textarea>
+                            <label for="textarea1"></label>
+                          </div>
                         <p></p> <span class="message js-tc-error" name="address_errmsg"></span>
                       </li>
                     </ul>
@@ -100,13 +104,19 @@
     <div class="member-inputForm">
       <div class="pattern-1">
         <div class="bg01">
+
           <div class="pt02">
             <ul class="js-careerBlock">
               <li class="li01" id="pr_text" name="pr_textparent">
                 <dl> <dt>自己PR</dt>
-                  <dd class="js-textCount"> <textarea name="pr_text" class="js-tc-input" prior="10" data-role="error-display" data-max-length="1000" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="自己PR" placeholder="例：職場の方々からは気が利くということを評価していただいており、私自身もそこが自分の強みだと自負しております。私は、仕事を進める上で、1つ1つのことを丁寧にこなすことを大切にしており、今後も続けていきたいと思います。" parent="pr_textparent" errmsg="pr_text_errmsg"></textarea>
-                    <p></p> <span class="message js-tc-error" name="pr_text_errmsg"></span>
+                
+                  <dd class="js-textCount">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea" placeholder="例：職場の方々からは気が利くということを評価していただいており、私自身もそこが自分の強みだと自負しております。私は、仕事を進める上で、1つ1つのことを丁寧にこなすことを大切にしており、今後も続けていきたいと思います。"></textarea>
+                      <label for="textarea1"></label>
+                     </div>
                   </dd>
+                  
                 </dl>
               </li>
 
@@ -127,66 +137,117 @@
               </li>
 
 
-      <!-- <li class="li03 js-cb-moduleItem js-cb-hide"> -->
-      <li class="li03 js-cb-moduleItem">
-				<dl id="js-career-form-1">
-					<dt class="js-cb-blockLabel">経験1</dt>
-					<dd>
-						<dl class="dl01" name="syu_comp_nameparent1">
-							<dt>勤務先企業名</dt>
-							<dd>
-								<span>
-									<input type="text" name="syu_comp_name1" value="" class="" prior="101" data-role="error-display" num="1" data-max-length="50" valid_length="100" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="勤務先企業名" placeholder="例：ディップ株式会社" parent="syu_comp_nameparent1" errmsg="syu_comp_name_errmsg1">
-								</span>
-								<span class="message" name="syu_comp_name_errmsg1">
-									
-								</span>
-							</dd>
-						</dl>
-						<dl class="dl02 js-workPeriod" name="entry_periodparent1">
-							<dt>経験期間</dt>
-							<dd>
-								
-							</dd>
-						</dl>
-						<dl class="dl03" name="koyo_sts_kbnparent1">
-							<dt>就業形態</dt>
-							<dd>
-								
-							</dd>
-						</dl>
-						<dl class="dl04" name="keiken_shok_cdparent1">
-							<dt>職種</dt>
-							<dd>
-								
-							</dd>
-						</dl>
-						<dl class="dl06" name="syom_naiyoparent1">
-							<dt>職務内容</dt>
-							<dd class="js-textCount">
-								<textarea name="syom_naiyo1" class="js-tc-input" prior="501" data-role="error-display" data-max-length="1000" num="1" valid_length="1000" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="職務内容" parent="syom_naiyoparent1" errmsg="syom_naiyo_errmsg1"></textarea>
-								<p><span>入力文字<em class="js-tc-currentLength">0</em>文字/</span>最大<em class="js-tc-maxLength">1,000</em>文字</p>
-								<span class="message js-tc-error" name="syom_naiyo_errmsg1"></span>
-							</dd>
-						</dl>
-						<dl class="dl05 js-cb-btnItem">
-							<dt class="js-cb-btnItemLabel">職務経験の<br>追加</dt>
-								<dd>
-									<ul class="ul03">
-										<li class="li01"><a class="color03 js-cb-removeBtn js-cb-hide">職務経験を削除する</a></li>
-										<li class="li02"><a id="js-cb-addBtn1" class="color03 js-cb-addBtn">さらに職務経験を追加する</a></li>
-									</ul>
-								</dd>
-						</dl>
-					</dd>
-				</dl>
-			</li>
-
-
+          <!-- <li class="li03 js-cb-moduleItem js-cb-hide"> -->
+          <li class="li03 js-cb-moduleItem">
+            <dl id="js-career-form-1">
+              <dt class="js-cb-blockLabel">経験1</dt>
+              <dd>
+                <dl class="dl01" name="syu_comp_nameparent1">
+                  <dt>勤務先企業名</dt>
+                  <dd>
+                    <span>
+                      <input type="text" name="syu_comp_name1" value="" class="" prior="101" data-role="error-display" num="1" data-max-length="50" valid_length="100" valid_rule_rt="checkStrCount" valid_rule_focus="clearErrorMsg checkStrCount" valid_rule="checkStrCompatible" alt="勤務先企業名" placeholder="例：ディップ株式会社" parent="syu_comp_nameparent1" errmsg="syu_comp_name_errmsg1">
+                    </span>
+                    <span class="message" name="syu_comp_name_errmsg1">
+                      
+                    </span>
+                  </dd>
+                </dl>
+                <dl class="dl02 js-workPeriod" name="entry_periodparent1">
+                  <dt>経験期間</dt>
+                      <dd>
+                      開始日
+                        <span class="span01"><input type="date" name="birthday"></span> <span class="message" name="birthday_errmsg"></span>
+                      </dd>
+                      <dd>
+                      終了日
+                        <span class="span02"><input type="date" name="birthday"></span> <span class="message" name="birthday_errmsg"></span>
+                      </dd>
+                </dl>
+                <dl class="dl03" name="koyo_sts_kbnparent1">
+                  <dt>就業形態</dt>
+                  <dd>
+                      <div class="input-field col s12">
+                    <select class="browser-default">
+                      <option value="" disabled selected>就業形態を選んでください</option>
+                      <option value="1">正社員</option>
+                      <option value="2">アルバイト</option>
+                      <option value="3">派遣</option>
+                      <option value="4">パート</option>
+                      <option value="5">業務委託</option>
+                      <option value="6">契約社員</option>
+                    </select>
+                  </div>
+                  </dd>
+                </dl>
+                <dl class="dl06" name="syom_naiyoparent1">
+                  <dt>職務内容</dt>
+                  <dd class="js-textCount">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" placeholder=""></textarea>
+                        <p><span>入力文字<em class="js-tc-currentLength">0</em>文字/</span>最大<em class="js-tc-maxLength">1,000</em>文字</p>
+                        <label for="textarea1"></label>
+                      </div>
+                  </dd>
+                </dl>
+                <dl class="dl05 js-cb-btnItem">
+                  <dt class="js-cb-btnItemLabel">職務経験の<br>追加</dt>
+                    <dd>
+                      <ul class="ul03">
+                        <li class="li01"><a class="color03 js-cb-removeBtn js-cb-hide">職務経験を削除する</a></li>
+                        <li class="li02"><a id="js-cb-addBtn1" class="color03 js-cb-addBtn">さらに職務経験を追加する</a></li>
+                      </ul>
+                    </dd>
+                </dl>
+              </dd>
+            </dl>
+          </li>
 
 
             </ul>
           </div>
+
+
+          <div class="pt02">
+						<ul>
+							<li class="li03" id="school_career">
+								<dl> <dt>最終学歴</dt>
+									<dd>
+										<dl class="dl01" name="gako_kbnparent"> <dt>学校区分</dt>
+											<dd> <span>
+									    <select name="gako_kbn" class="browser-default" prior="16" data-role="error-display" valid_rule_focus="clearErrorMsg" alt="最終学歴[学校区分]" parent="gako_kbnparent" errmsg="gako_kbn_errmsg">
+										    <option value="">選択してください</option>
+                        <option value="0">中学</option>
+                        <option value="1">高校</option>
+                        <option value="4">高等専門学校</option>
+                        <option value="3">短大</option>
+                        <option value="2">専門学校</option>
+                        <option value="5">大学</option>
+                        <option value="6">大学院</option>
+									</select>
+								</span> <span class="message" name="gako_kbn_errmsg">
+									
+								</span> </dd>
+										</dl>
+										<dl class="dl06" name="gakurekiparent"> <dt>卒業区分/年度</dt>
+											<dd style="padding-bottom: 5px;">
+											
+                      </dd>
+										</dl>
+										<dl name="gakoparent"> <dt>学校名</dt>
+											<dd> <span>
+									    <input type="text" name="gako_name" id="gakureki5" value="" class="" prior="20" data-role="error-display" data-max-length="50" valid_length="100" alt="最終学歴[学校名]" placeholder="例：○○大学○○学部○○学科" parent="gakoparent" errmsg="gako_errmsg">
+								      </span> <span class="message" name="gako_errmsg"></span> </dd>
+										</dl>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+
+
+
+
         </div>
       </div>
     </div>

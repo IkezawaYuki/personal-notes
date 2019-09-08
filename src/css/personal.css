@@ -2879,27 +2879,6 @@ a[class*=color], input[class*=color] {
   text-align: center;
 }
 
-.member-mailSetting .pt03 a {
-  width: 250px;
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
-
-.member-mailSetting .pt01 dl {
-  display: table;
-  width: 100%;
-  border-bottom: 1px #dbdbdb solid;
-}
-.member-mailSetting .pattern-1 {
-  padding-top: 20px;
-}
-
-.member-mailSetting .bg01 {
-  border: 1px #dbdbdb solid;
-  border-radius: 5px;
-}
 
 .member-titleInfo .pattern-1, .member-titleInfo .pattern-2 {
   padding-top: 30px;
@@ -2919,31 +2898,4 @@ a[class*=color], input[class*=color] {
   padding-top: 10px;
   font-size: 14px;
   text-align: center;
-}
-
-.member-formSubmit .pattern-1 {
-  padding-top: 20px;
-}
-
-.member-formSubmit .pt01 .ul01 {
-  font-size: 0;
-  text-align: center;
-}
-.member-formSubmit .pt01 li:first-child {
-  padding-right: 20px;
-}
-.member-formSubmit .pt01 li {
-  display: inline-block;
-  font-size: 20px;
-}
-
-.member-formSubmit .pt01 li a {
-  display: inline-block;
-  position: relative;
-  padding: 9px 5px 11px;
-  width: 300px;
-  font-size: 18px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-weight: 700;
 }
